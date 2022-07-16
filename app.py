@@ -9,7 +9,7 @@ tipo = random.choice(tipos)
 st.write(tipo)
 
 url = f'http://quant.cl/places/Concón_{tipo}'
-df = pd.read_html(url, encoding='utf-8')[0]
+df = pd.read_html(url, encoding='latin-1')[0]
 st.dataframe(df)   
 
 # either map or grab map from url above!
