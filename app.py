@@ -8,5 +8,8 @@ tipos = ['restaurant','hotel','museo']
 tipo = random.choice(tipos)
 st.write(tipo)
 
-df = pd.read_html(f'http://quant.cl/places/Concón_{tipo}')[0]
-st.dataframe(df)
+url = f'http://quant.cl/places/Concón_{tipo}'
+df = pd.read_html(url)[0]
+st.dataframe(df)   
+
+# either map or grab map from url above!
