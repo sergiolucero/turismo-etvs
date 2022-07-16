@@ -7,3 +7,6 @@ tipos = ['restaurant','hotel','museo']
 
 tipo = random.choice(tipos)
 st.write(tipo)
+
+df = pd.read_html(f'http://quant.cl/places/Concón_{tipo}')[0]
+st.dataframe(df)
