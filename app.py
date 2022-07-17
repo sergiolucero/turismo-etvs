@@ -12,7 +12,7 @@ for tipo in tipos:
   #df = df.drop(columns=['open'])
   xdf.append(df)
   
-gdf = xdf.groupby('tipo').size()
+#gdf = xdf.groupby('tipo').size()
 st.dataframe(xdf)   
-st.dataframe(gdf)
+#st.dataframe(gdf)
 # either map or grab map from url above!
