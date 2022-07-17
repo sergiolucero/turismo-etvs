@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.header('Turismo ETV1: Concón')
-tipos = ['restaurant','hotel','museo','teatro','galeria']
+tipos = ['restaurant','hotel','museo'] #,'teatro','galeria']
 
 xdf = pd.DataFrame()
 for tipo in tipos:
