@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
+import time
 
+t0=time.time()
 st.header('Turismo ETV1: Concón')
 tipos = ['restaurant','hotel','museo'] #,'teatro','galeria']
 
@@ -13,6 +15,7 @@ for tipo in tipos:
   xdf = xdf.append(df)
   
 gdf = xdf.groupby('tipo').size()
+st.write('DT:', round(time.time()-t0,2))
 st.dataframe(xdf)   
 st.dataframe(gdf)
 # either map or grab map from url above!
